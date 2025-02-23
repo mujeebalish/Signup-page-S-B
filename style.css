@@ -1,0 +1,13 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    /* background: linear-gradient(90deg, #d5c, #f3f3f3, #2c2) no-repeat center center fixed; */
+    overflow: hidden;
+
+}
+.logo{
+    max-width: 40%
+}
