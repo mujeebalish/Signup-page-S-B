@@ -5,9 +5,16 @@
 }
 body{
     /* background: linear-gradient(90deg, #d5c, #f3f3f3, #2c2) no-repeat center center fixed; */
-    overflow: hidden;
+
 
 }
 .logo{
     max-width: 40%
+}
+.signup-btn{
+    padding: 5px;
+
+}
+.signup-with img{
+    max-width: 7%;
 }
