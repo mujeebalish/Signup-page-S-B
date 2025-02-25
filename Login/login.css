@@ -1,0 +1,24 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    /* background: linear-gradient(90deg, #d5c, #f3f3f3, #2c2) no-repeat center center fixed; */
+
+
+}
+.logo{
+    max-width: 40%
+}
+.login-btn{
+    padding: 5px;
+
+}
+.login-with img{
+    font-size: 15px;
+    max-width: 7%;
+}
+.signup-with:hover{
+    background-color: rgb(161, 159, 159);
+}
