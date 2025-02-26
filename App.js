@@ -5,7 +5,8 @@ let confirmPassword = document.getElementById("floatingcofirmPassword");
 let registerBtn = document.getElementById("registerBtn");
 // console.log(registerBtn);
 
-registerBtn.addEventListener("click", () => {
+registerBtn.addEventListener("click", (e) => {
+ e.preventDefault();
+ 
 
-    console.log("asjhkghjsgdghajs");
 })
