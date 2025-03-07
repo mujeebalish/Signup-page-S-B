@@ -8,35 +8,42 @@ let registerBtn = document.getElementById("registerBtn");
 
 registerBtn.addEventListener("click", (e) => {
  e.preventDefault();
+ registerBtn. innerHTML = "Laoding.....";
  createUserWithEmailAndPassword(auth, email.value, password.value)
   .then((userCredential) => {
-
     const user = userCredential.user;
+    registerBtn.innerHTML = "Sign Up"
     Toastify({
-
-        text: `${"Successfully Registerd"}`,
-
-        duration: 3000
-
-        }).showToast();
-
-
-
+      text: `${"Successfully Registerd"}`,
+      duration: 3000
+    }).showToast();
+    email.value = "";
+    password.value = "";
   })
   .catch((error) => {
     const errorCode = error.code;
     const errorMessage = error.message;
+    registerBtn.innerHTML = "Sign Up"
     Toastify({
-
-        text: `${errorMessage}`,
-
-        duration: 3000
-
-        }).showToast();
-
-
-
+      text: `${errorMessage}`,
+      duration: 3000
+    }).showToast();
+    email.value = "";
+    password.value = "";
   });
-
-
 })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
