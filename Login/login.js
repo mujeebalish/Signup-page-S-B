@@ -12,7 +12,7 @@ loginBtn.addEventListener("click", () => {
             duration: 3000
           }).showToast();
           loginBtn.innerHTML = "Login"
-          window.location.href
+
       // ...
     })
     .catch((error) => {
@@ -25,6 +25,6 @@ loginBtn.addEventListener("click", () => {
       }).showToast();
       loginBtn.innerHTML = "Login"
     });
-    
+  });
 
-});
+
