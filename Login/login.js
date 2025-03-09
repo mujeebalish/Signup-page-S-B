@@ -25,11 +25,11 @@ loginBtn.addEventListener("click", () => {
       }).showToast();
       loginBtn.innerHTML = "Login"
     });
+    onAuthStateChanged(auth, (user) => {
+      if (user) {
+       window.location.href = "../Dashbord/dashbord.html"
+      }
+
+    });
 
 });
-onAuthStateChanged(auth, (user) => {
-    if (user) {
-     window.location.href = "../Dashbord/dashbord.html"
-    }
-
-  });
