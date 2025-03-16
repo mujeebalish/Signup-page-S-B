@@ -3,6 +3,7 @@ let email = document.getElementById("floatingInput");
 let password = document.getElementById("floatingPassword");
 let loginBtn = document.getElementById("loginBtn");
 loginBtn.addEventListener("click", () => {
+  event.preventDefault()
     signInWithEmailAndPassword(auth, email.value, password.value)
     .then((userCredential) => {
         const user = userCredential.user;
@@ -25,6 +26,18 @@ loginBtn.addEventListener("click", () => {
       }).showToast();
       loginBtn.innerHTML = "Login"
     });
+    onAuthStateChanged(auth, (user) => {
+      if (user) {
+        window.location.href = '../Dashbord/dashbord.html'
+        const uid = user.uid;
+        // ...
+      } else {
+        alert("Please Login first")
+      }
+    });
   });
+
+
+
 
 
