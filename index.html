@@ -18,14 +18,23 @@
 <body>
     <header>
         <!-- Top header -->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <nav class="navbar navbar-expand-md navbar-dark bg-primary">
          <div class="container">
-            <div class="bavbar-brand">
+            <div class="bavbar-brand d-md-block d-none">
                 <a href="./index.html" class="navbar-brand"><img src="./images/a.png" alt="Logo" width="130"></a>
             </div>
-            <button class=""></button>
             <div class="bavbar-brand">
-                <a href="./index.html" class="navbar-brand"><h1 class="h1 alishwdev">AlishWDev</h1></a>
+                <a href="./index.html" class="navbar-brand d-md-none d-block"><h1 class="h1 alishwdev">AlishWDev</h1></a>
+            </div>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#ul-box">menu</button>
+            <div class="collapse navbar-collapse" id="ul-box">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a href="#" class="nav-link active text-center text-white">home</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link active text-center text-white">news</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link active text-center text-white">category</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link active text-center text-white">about us</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link active text-center text-white">contact us</a></li>
+                </ul>
             </div>
          </div>
         </nav>
