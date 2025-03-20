@@ -8,6 +8,7 @@
     height: auto;
 }
 .alishwdev{
-    /* background-image: linear-gradient(to right#FDAF0E); */
-    background-color: aqua !important;
+    background:linear-gradient(to right, #FEAE14,#F11772) ;
+    color: black;
 }
+
